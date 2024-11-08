@@ -1,0 +1,2 @@
+class PositionOccupiedError(Exception):
+    pass
