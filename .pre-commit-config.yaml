@@ -1,0 +1,24 @@
+# Followed https://ljvmiranda921.github.io/notebook/2018/06/21/precommits-using-black-and-flake8/
+# Run `pre-commit install` to set up pre-commit in .git (might also need to do `pre-commit autoupdate` once in a while)
+
+repos:
+-   repo: https://github.com/psf/black-pre-commit-mirror
+    rev: 24.10.0
+    hooks:
+    -   id: black
+        args: [--line-length=79]
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+    -   id: trailing-whitespace
+    -   id: end-of-file-fixer
+    -   id: check-added-large-files
+    -   id: check-case-conflict
+-   repo: https://github.com/PyCQA/isort
+    rev: 5.13.2
+    hooks:
+      - id: isort
+-   repo: https://github.com/PyCQA/flake8
+    rev: 7.0.0
+    hooks:
+    -   id: flake8

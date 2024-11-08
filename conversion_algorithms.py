@@ -3,7 +3,7 @@ The functions in this file convert a float in [0,1] into a move.
 These are used to determine the creature's next move.
 """
 
-from position import ALL_DIRECTIONS, Direction, Position
+from position import ALL_DIRECTIONS, Direction
 
 
 def linear(move: float) -> Direction:

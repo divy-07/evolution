@@ -1,7 +1,5 @@
 from typing import List
 
-from conversion_algorithms import linear
-from evaluation_algorithms import sigmoid
 from position import Direction, Position
 
 
