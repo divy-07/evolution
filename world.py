@@ -7,7 +7,8 @@ class World:
     def __init__(self, grid_size):
         self.grid_size = grid_size
         self.grid = [
-            [None for _ in range(self.grid_size)] for _ in range(self.grid_size)
+            [None for _ in range(self.grid_size)]
+            for _ in range(self.grid_size)
         ]
         self.creatures: dict[int, Creature] = {}  # id: Creature
 
