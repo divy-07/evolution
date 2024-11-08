@@ -1,5 +1,5 @@
-from creature import Creature
-from exceptions import PositionOccupiedError
+from simulation.creature import Creature
+from simulation.exceptions import PositionOccupiedError
 
 
 class World:
