@@ -1,6 +1,6 @@
 from typing import List
 
-from position import Direction, Position
+from simulation.position import Direction, Position
 
 
 class Creature:
