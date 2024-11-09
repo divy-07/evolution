@@ -10,7 +10,8 @@ from simulation.world import World
 grid_size = 10
 w = World(grid_size)
 count = 0
-while count < 10:
+num_creatures = 10
+while count < num_creatures:
     c = Creature(sigmoid, linear)
     c.set_params([random.randint(-10, 10) for _ in range(10)])
     pos = Position(
