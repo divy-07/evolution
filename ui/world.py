@@ -1,6 +1,6 @@
 from PyQt6.QtWidgets import QGridLayout, QWidget
 
-from simulation.world import World
+from simulator.world import World
 
 
 class WorldWidget(QWidget):

@@ -2,12 +2,12 @@ import random
 
 from PyQt6.QtWidgets import QHBoxLayout, QMainWindow, QPushButton, QWidget
 
-from simulation.conversion_algorithms import linear
-from simulation.creature import Creature
-from simulation.evaluation_algorithms import sigmoid
-from simulation.exceptions import PositionOccupiedError
-from simulation.position import Position
-from simulation.world import World
+from simulator.conversion_algorithms import linear
+from simulator.creature import Creature
+from simulator.evaluation_algorithms import sigmoid
+from simulator.exceptions import PositionOccupiedError
+from simulator.position import Position
+from simulator.world import World
 from ui.world import WorldWidget
 
 
