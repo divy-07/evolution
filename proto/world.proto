@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+
+message World {
+  Grid grid = 1;
+}
+
+message Grid {
+  repeated Row row = 1;
+}
+
+message Row {
+  repeated google.protobuf.Int32Value cell = 1;
+}
