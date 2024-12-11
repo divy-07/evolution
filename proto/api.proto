@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+import "proto/endpoints.proto";
+
+message RequestBody {
+    oneof body {
+        PingRequest ping_request = 1;
+        CreateWorldRequest create_world_request = 2;
+        GetWorldRequest get_world_request = 3;
+        MakeStepRequest make_step_request = 4;
+    }
+}
+
+message ResponseBody {
+    oneof body {
+        PingResponse ping_response = 1;
+        CreateWorldResponse create_world_response = 2;
+        GetWorldResponse get_world_response = 3;
+        MakeStepResponse make_step_response = 4;
+    }
+}
+
+message Request {
+    string id = 1;
+    string version = 2;
+    RequestType type = 3;
+    RequestBody body = 4;
+}
+
+message Response {
+    string id = 1;
+    RequestType type = 2;
+    ResponseBody body = 3;
+    bool success = 4;
+    optional string error = 5;
+}

@@ -1,0 +1,42 @@
+syntax = "proto3";
+
+import "proto/world.proto";
+
+enum RequestType {
+    PING = 0;
+    CREATE_WORLD = 1;
+    GET_WORLD = 2;
+    MAKE_STEP = 3;
+}
+
+message PingRequest {
+    // empty
+}
+
+message CreateWorldRequest {
+    int32 grid_size = 1;
+}
+
+message GetWorldRequest {
+    // empty
+}
+
+message MakeStepRequest {
+    int32 num_steps = 1;
+}
+
+message PingResponse {
+    // empty
+}
+
+message CreateWorldResponse {
+    // empty
+}
+
+message GetWorldResponse {
+    World world = 1;
+}
+
+message MakeStepResponse {
+    // empty
+}
